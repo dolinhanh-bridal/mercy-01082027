@@ -443,7 +443,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     if(!coNet) return baoLoi("Please sign in the box.","Khách cần ký vào ô.");
     if(!document.getElementById("kyDongY").checked) return baoLoi("Please tick the box to agree.","Khách cần tick ô đồng ý.");
 
-    var W=1080, H=1800, c=document.createElement("canvas"); c.width=W; c.height=H; var g=c.getContext("2d");
+    var W=1080, H=2060, c=document.createElement("canvas"); c.width=W; c.height=H; var g=c.getContext("2d");
     g.fillStyle="#fff"; g.fillRect(0,0,W,H);
     g.fillStyle="#8A6B41"; g.font="600 20px 'Be Vietnam Pro',Helvetica,Arial"; g.fillText("DOLINHANH BRIDAL · MADE TO MEASURE",70,90);
     g.fillStyle="#22231F"; g.font="600 54px 'Cormorant Garamond',Georgia,serif"; g.fillText("Order Agreement",70,160);
