@@ -479,7 +479,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   }
   function veKy(){
     var el=document.getElementById("daKy"); if(!el) return;
-    if(!KY){ el.hidden=true; return; }
+    if(!KY || new Date(KY.luc) < new Date("2026-11-12T09:00:00Z")){ el.hidden=true; return; } // 12/11: HĐ cập nhật mẫu mới → chữ ký cũ không tính, khách ký lại
     el.textContent=(vi()?"✓ Đã ký bởi ":"✓ Signed by ")+KY.ten+" · "+ngay(KY.luc);
     if(KY.anh){ var im=document.createElement("img"); im.src=KY.anh; im.alt="Signature"; el.appendChild(im); }
     el.hidden=false;
